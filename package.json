@@ -1,0 +1,23 @@
+{
+  "name": "scraper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/potaski88/scraper-module.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/potaski88/scraper-module/issues"
+  },
+  "homepage": "https://github.com/potaski88/scraper-module#readme",
+  "dependencies": {
+    "dom-parser": "^0.1.6",
+    "request-promise": "^4.2.5"
+  }
+}
