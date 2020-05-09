@@ -22,6 +22,20 @@ const scrapeProduct =  (url) => {
     })
 }
 
+const scrapePriceOnly=  (url) => {
+    return rp(url)
+    .then(function (body) {
+        const parser = new DomParser()
+        const dom = parser.parseFromString(body)
+        
+        return getPrice(dom)
+   
+    })
+    .catch(err => {
+        console.log(err)
+    })
+}
+
 
 
 
