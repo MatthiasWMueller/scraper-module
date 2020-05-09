@@ -22,7 +22,7 @@ const scrapeProduct =  (url) => {
     })
 }
 
-const scrapePriceOnly=  (url) => {
+const scrapePriceOnly =  (url) => {
     return rp(url)
     .then(function (body) {
         const parser = new DomParser()
@@ -136,6 +136,7 @@ function startsWith(str, word) {
 
 module.exports = {
     scrapeProduct: scrapeProduct,  
+	scrapePriceOnly: scrapePriceOnly
 }
 
 
